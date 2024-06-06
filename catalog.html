@@ -157,26 +157,7 @@
     <h3>Спробуй наші рецепти!</h3>
 </div>
 
-<script>
-    // Выбираем все изображения внутри карточек
-    let cardImages = document.querySelectorAll('.card-img-top');
 
-    // Инициализируем переменную для хранения максимальной высоты
-    let maxHeight = 0;
-
-    // Проходим по всем изображениям и находим максимальную высоту
-    cardImages.forEach(image => {
-        let height = image.clientHeight;
-        if (height > maxHeight) {
-            maxHeight = height;
-        }
-    });
-
-    // Устанавливаем максимальную высоту для всех изображений
-    cardImages.forEach(image => {
-        image.style.height = maxHeight + 'px';
-    });
-</script>
 
 <!-- Подключение Bootstrap JS (jQuery, Popper.js, Bootstrap JS) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
