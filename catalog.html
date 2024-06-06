@@ -45,7 +45,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                        <img src="https://i.postimg.cc/CxyVNMs8/image.webp"  class="card-img-top" alt="Recipe 1">
+                        <img src="борщ.webp"  class="card-img-top" alt="Recipe 1">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Борщ</h5>
@@ -57,7 +57,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/vZWwSR0N/image.jpg" height="220" class="card-img-top" alt="Recipe 2">
+                    <img src="карбонара.webp" class="card-img-top" alt="Recipe 2">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Паста Карбонара</h5>
@@ -69,7 +69,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/1R2xmRTd/image.jpg"  class="card-img-top" alt="Recipe 3">
+                    <img src="стейк.webp"  class="card-img-top" alt="Recipe 3">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Стейк з яловичини</h5>
@@ -81,7 +81,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" >
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/nr6N0TBx/image.png"  class="card-img-top" alt="Recipe 4">
+                    <img src="маргарита.webp"  class="card-img-top" alt="Recipe 4">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Піца Маргарита</h5>
@@ -93,7 +93,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/6pdTVmn9/image.jpg" class="card-img-top" alt="Recipe 5">
+                    <img src="цезарь.webp" class="card-img-top" alt="Recipe 5">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Салат Цезар</h5>
@@ -105,7 +105,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/RFpknv0N/image.jpg"  class="card-img-top" alt="Recipe 6">
+                    <img src="філадельфія.webp"  class="card-img-top" alt="Recipe 6">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Суши Філадельфія</h5>
@@ -117,7 +117,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/43skD8MN/image.webp" class="card-img-top" alt="Recipe 7">
+                    <img src="грецький%20салат.webp" class="card-img-top" alt="Recipe 7">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Грецький салат</h5>
@@ -129,7 +129,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/jjc0tH06/image.jpg" class="card-img-top" alt="Recipe 8">
+                    <img src="ласунчик.webp" class="card-img-top" alt="Recipe 8">
                     </div>
                     <div class="card-body" >
                         <h5 class="card-title">Ласунчики з куркою</h5>
@@ -141,7 +141,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="image-container-catalog">
-                    <img src="https://i.postimg.cc/W34R3dTB/image.jpg" class="card-img-top" alt="Recipe 9">
+                    <img src="тірамісу.webp" class="card-img-top" alt="Recipe 9">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Тірамісу</h5>
@@ -158,7 +158,26 @@
 </div>
 
 
+<script>
+    // Выбираем все изображения внутри карточек
+    let cardImages = document.querySelectorAll('.card-img-top');
 
+    // Инициализируем переменную для хранения максимальной высоты
+    let maxHeight = 0;
+
+    // Проходим по всем изображениям и находим максимальную высоту
+    cardImages.forEach(image => {
+        let height = image.clientHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+
+    // Устанавливаем максимальную высоту для всех изображений
+    cardImages.forEach(image => {
+        image.style.height = maxHeight + 'px';
+    });
+</script>
 <!-- Подключение Bootstrap JS (jQuery, Popper.js, Bootstrap JS) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
