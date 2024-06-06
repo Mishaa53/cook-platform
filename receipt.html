@@ -14,7 +14,8 @@
 
 <!-- Навигационная панель -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <img class="navbar-brand" src="logo.svg" height="120" width="120" onclick="window.location.href='index.html'" >
+
+    <img class="navbar-brand" src="logo.svg" height="120" width="120" onclick="window.location.href='index.html'" alt="Logo">
     <button class="navbar-toggler" type="button" style="margin-right: 25px" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,16 +24,16 @@
     <div class="collapse navbar-collapse" style="margin-right: 25px" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="catalog.html">Каталог рецептів</a>
+                <a class="nav-link custom-nav-link" href="catalog.html">Каталог рецептів</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blog.html">Блог</a>
+                <a class="nav-link custom-nav-link" href="blog.html">Блог</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ablout.html">Про нас</a>
+                <a class="nav-link custom-nav-link" href="ablout.html">Про нас</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Контакти</a>
+                <a class="nav-link custom-nav-link" href="contact.html">Контакти</a>
             </li>
         </ul>
     </div>
@@ -40,7 +41,7 @@
 <div class="main-content">
     <div class="content-center">
         <div class="text-container">
-            <div style="padding: 12px;">
+            <div class="receipt-container" style="padding: 12px;">
                 <h1>Борщ</h1>
                 <div class="image-container">
                 <img src="борщ.webp" alt="Борщ" style="max-width: 100%;">
@@ -80,7 +81,8 @@
     <h3>Спробуй наші рецепти!</h3>
 </div>
 
-<!-- Подключение Bootstrap JS (jQuery, Popper.js, Bootstrap JS) -->
+
+<script src="receipts-scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
