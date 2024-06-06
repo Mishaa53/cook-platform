@@ -104,6 +104,28 @@ body {
     height: auto;
     margin: 10px 0;
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Установите высоту 100%, чтобы все карточки в строке имели одинаковую высоту */
+}
+
+.card-body {
+    flex-grow: 1; /* Расширяем содержимое карточки на всю доступную высоту */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределение элементов внутри .card-body между собой */
+}
+.card-img-top {
+    object-fit: cover; /* Изображение заполнит свой контейнер и сохранит соотношение сторон */
+    height: 100%; /* Установите высоту 100%, чтобы все изображения имели одинаковую высоту */
+}
+
+.image-container-catalog img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0;
+}
 .form-group {
     margin-bottom: 15px;
 }
