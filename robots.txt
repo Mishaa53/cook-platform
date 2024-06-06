@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mishaa53.github.io/cook-platform/sitemap.xml
